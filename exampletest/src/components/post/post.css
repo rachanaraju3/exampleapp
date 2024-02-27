@@ -1,0 +1,75 @@
+.post {
+    width: 23%;
+    margin: 0px 25px 15px 25px;
+    display: flex;
+    font-family: "Cormorant Garamond", serif;
+    flex-direction: column;
+}
+
+.postSummary {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    color:black;
+    margin-top: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: centr;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+.postImage {
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.postTitle {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.postCat {
+    font-family: "Cormorant Garamond", serif;
+    cursor: pointer;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color:#554455;
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #997788;
+    color: #fff;
+    height: 1px;
+    width: 100%;
+}
+
+.postDate {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 300;
+    color:#554455;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.postInfo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
