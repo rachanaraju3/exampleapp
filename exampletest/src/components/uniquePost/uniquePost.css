@@ -1,0 +1,52 @@
+.uniquePost {
+    flex: 10;
+}
+
+.editPost {
+    font-size: 20px;
+    float: right;
+}
+
+.uniquePostInfo {
+    margin-bottom: 15px;
+    display: flex;
+    font-size: 15px;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+    justify-content: space-between;
+}
+
+.uniquePostImage {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.postIcon{
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.uniquePostTitle {
+    margin: 20px;
+    font-size: 40px;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+
+.uniquePostWrapper {
+    padding-right: 5%;
+    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.uniquePostDescription {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    color: black;
+    line-height: 40px;
+}
+
