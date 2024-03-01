@@ -1,0 +1,53 @@
+.createAccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(https://images.squarespace-cdn.com/content/v1/5f13643bd87ba32558d653e7/fbe95804-f2e0-42b5-b20a-ff91c0a8bde8/sabina-sturzu-pAk7WnfquaI-unsplash.jpg);
+    background-size: cover;
+    height: calc(100vh - 50px);
+}
+
+.createAccountTitle {
+    font-size: 75px;
+}
+
+.createAccountForm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+    .createAccountForm > label {
+        margin: 10px 0;
+        font-size: 30px;
+        color:beige;
+       
+    }
+
+.createAccountInput {
+    padding: 10px;
+    background-color: beige;
+    border: none;
+    border-radius: 10px;
+}
+
+.createAccountButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 232, 246);
+    color: rgb(158, 95, 135);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.createAccountLoginButton {
+    background-color: rgb(255, 232, 246);
+    cursor: pointer;
+    color: rgb(158,95,135);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
