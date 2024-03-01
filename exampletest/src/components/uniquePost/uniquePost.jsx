@@ -1,5 +1,6 @@
 import React from "react";
 import "./uniquePost.css"
+import {Link} from "react-router-dom"
 
 export default function UniquePost() {
     return (
@@ -18,7 +19,10 @@ export default function UniquePost() {
                     <div className="uniquePostInfo">
                         <span className="uniquePostAuthor">
                             Author:
+                            <Link to={'/?user=rachana'} className="link">
                                 <b> rachana</b>
+                            </Link>
+                                
                         </span>
                         <span className="uniquePostDate">
                              today
