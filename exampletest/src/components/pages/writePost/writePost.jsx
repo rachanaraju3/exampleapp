@@ -3,7 +3,7 @@ import "./writePost.css"
 export default function WritePost() {
     return (
         <>
-            <div className="WritePost">
+            <div className="writePost">
                 <img className="writeImage" src="/images/background.png" alt=""/>
 
                 <form className="writePostForm">

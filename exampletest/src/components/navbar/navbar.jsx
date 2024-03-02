@@ -17,7 +17,7 @@ export default function NavBar() {
                         <li className='navListItem'>About</li>
                         <li className='navListItem'>Contact</li>
                         <li className='navListItem'>
-                            <Link className='link' to="/writePost">
+                            <Link className='link' to="/write">
                                 Write
                             </Link>
                         </li>
