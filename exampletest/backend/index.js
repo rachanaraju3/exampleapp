@@ -3,7 +3,8 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const auth = require("./src/auth");
-const users = require("./src/users")
+const users = require("./src/users");
+const categories = require("./src/categories");
 const path = require("path");
 
 dotenv.config();
@@ -18,6 +19,7 @@ mongoose.connect(process.env.MONGO_URL, {
 
 app.use("/auth", auth);
 app.use("/users", users);
+app.use("/categories", categories);
 
 app.use("/", (req, res) =>
 {
