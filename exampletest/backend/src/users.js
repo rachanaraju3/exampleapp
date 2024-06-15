@@ -10,22 +10,22 @@ router.put("/:id", async (req,res) => {
     if (req.body.userId === req.params.id) {
         if (req.body.password)
         /* update password */
-    {
-        const salt = await bcrypt.genSalt(5);
-        req.body.password = await bcrypt.hash(req.body.password, salt);
-    }
-    try {
-        const updatedUser = await User.findByIdAndUpdate(
-            req.params.id,
-            {
-                $set: req.body,
-            },
-            { new: true}
-        );
-        res.status(200).json(updatedUser);
-    } catch (err) {
-        res.status(500).json(err);
-    }
+        {
+            const salt = await bcrypt.genSalt(5);
+            req.body.password = await bcrypt.hash(req.body.password, salt);
+        }
+        try {
+            const updatedUser = await User.findByIdAndUpdate(
+                req.params.id,
+                {
+                    $set: req.body,
+                },
+                { new: true}
+            );
+            res.status(200).json(updatedUser);
+        } catch (err) {
+            res.status(500).json(err);
+        }
     } else {
         res.status(401).json("you can only update the account you own");
         console.log("can't update")
